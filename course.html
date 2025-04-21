@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="course.css">
+    <link rel = "stylesheet" href="header.css">
+    <title>Leveragai Academy</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Leveragai Academy </div>
+        <nav class="nav-container">
+            <a href="#" class="nav-button">Home</a>
+            <a href="#" class="nav-button">Career Support</a>
+            <a href="#" class="nav-button">Assess Yourself</a>
+            <a href="#" class="nav-button">Contact Us</a>
+            <a href="#" class="nav-button">Account</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Select Course</h2>
+        
+        <div class="course-grid">
+            <!-- Course Cards (same as before) -->
+            <div class="course-card">
+                <div class="course-shortcut">AI</div>
+                <div class="course-name">Artificial Intelligence</div>
+            </div>
+            <div class="course-card">
+                <div class="course-shortcut">CY</div>
+                <div class="course-name">CY Cybersecurity</div>
+            </div>
+            <div class="course-card">
+                <div class="course-shortcut">LS</div>
+                <div class="course-name">LS Leadership</div>
+            </div>
+            <div class="course-card">
+                <div class="course-shortcut">PM</div>
+                <div class="course-name">Project Management</div>
+            </div>
+            <div class="course-card">
+                <div class="course-shortcut">DG</div>
+                <div class="course-name">Data Governance</div>
+            </div>
+            <div class="course-card">
+                <div class="course-shortcut">DT</div>
+                <div class="course-name">Digital Transformation</div>
+            </div>
+        </div>
+        <div class="next-button-container">
+            <button class="next-btn" onclick="redirectToTrainer()">Next →</button>
+        </div>
+    </main>
+
+    <script>
+        function redirectToTrainer() {
+            // Replace 'trainer.html' with your target page URL
+            window.location.href = "model.html";
+        }
+    </script>
+</body>
+</html>

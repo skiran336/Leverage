@@ -1,0 +1,109 @@
+:root {
+    --primary-dark: #0a192f;
+    --secondary-dark: #112240;
+    --accent-blue: #64ffda;
+    --text-primary: #ffffff;
+}
+
+body {
+    background: 
+linear-gradient(
+    135deg,
+    rgba(40, 105, 140, 0.08) 0%,
+    rgba(8, 94, 140, 0.01) 15%,
+    var(--primary-dark) 60%
+),
+var(--primary-dark);
+background-attachment: fixed;
+min-height: 100vh;
+    color: var(--text-primary);
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 180px auto 2rem; /* Single margin declaration */
+    padding: 40px 1rem 0; /* Top padding only */
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    margin: 3rem 0 2rem; /* Increased top margin */
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background: var(--secondary-dark);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.1);
+}
+
+.course-shortcut {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.course-name {
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--text-primary);
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.next-button-container {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.next-btn {
+    background: transparent;
+    border: 2px solid var(--secondary-dark);
+    color: var(--text-primary);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.next-btn:hover {
+    background: rgba(100, 255, 218, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.1);
+    border-color: var(--accent-blue);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="model.css">
+    <link rel = "stylesheet" href="header.css">
+    <title>Leveragai Academy</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Leveragai Academy </div>
+        <nav class="nav-container">
+            <a href="#" class="nav-button">Home</a>
+            <a href="#" class="nav-button">Career Support</a>
+            <a href="#" class="nav-button">Assess Yourself</a>
+            <a href="#" class="nav-button">Contact Us</a>
+            <a href="#" class="nav-button">Account</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Select Model</h2>
+        <div class="course-grid">
+            <!-- Course Cards (same as before) -->
+            <div class="course-card">
+                <div class="course-name">Create your own AI courses</div>
+            </div>
+            <div class="course-card">
+                <div class="course-name">Coding and technical AI interview preparation </div>
+            </div>
+            <div class="course-card">
+                <div class="course-name">Project-based AI experience building </div>
+            </div>
+            <div class="course-card">
+                <div class="course-name">Quizzes</div>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button class="nav-btn" id="backBtn">← Back</button>
+            <button class="nav-btn" id="nextBtn">Next →</button>
+        </div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    // Back Button
+        document.getElementById('backBtn').addEventListener('click', () => {
+            window.history.back();
+        });
+
+        // Next Button
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            window.location.href = 'trainer.html';
+        });
+    });
+    </script>
+</body>
+</html>

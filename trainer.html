@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="trainer.css">
+    <link rel = "stylesheet" href="header.css">
+    <title>Trainer Dashboard</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">Leveragai Academy</div>
+        <nav class="nav-container">
+            <a href="#" class="nav-button">Home</a>
+            <a href="#" class="nav-button">Career Support</a>
+            <a href="#" class="nav-button">Assess Yourself</a>
+            <a href="#" class="nav-button">Contact Us</a>
+            <a href="#" class="nav-button">Account</a>
+        </nav>
+    </header>
+
+    <main class="trainer-main">
+        <section class="course-section">
+            <h2 class="section-title">Select Your Own Course</h2>
+            <button class="create-btn">Create New Course</button>
+        </section>
+
+        <section class="course-section">
+            <h2 class="section-title">Select Predefined Curriculum</h2>
+            <ul class="curriculum-list">
+                <li class="curriculum-item">
+                    <div class="course-title">The AI Engineer Course 2025: Complete AI Engineer Bootcamp</div>
+                    <div class="course-duration">18hrs</div>
+                </li>
+                <li class="curriculum-item">
+                    <div class="course-title">Machine Learning A-Z: AI, Python & R + ChatGPT</div>
+                    <div class="course-duration">78hrs</div>
+                </li>
+                <li class="curriculum-item">
+                    <div class="course-title">All of AI: ChatGPT, Midjourney, Stable Diffusion & App Dev</div>
+                    <div class="course-duration">31hrs</div>
+                </li>
+            </ul>
+        </section>
+        <div class="navigation-buttons">
+            <button class="nav-btn" id="backBtn">← Back</button>
+            <button class="nav-btn" id="nextBtn">Next →</button>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    // Back Button
+        document.getElementById('backBtn').addEventListener('click', () => {
+            window.history.back();
+        });
+
+        // Next Button
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            window.location.href = 'promptPage.html';
+        });
+    });
+    </script>
+</body>
+</html>
