@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Redirect root to main.html
 app.get('/', (req, res) => {
-  res.redirect('/main.html');
+  res.redirect('/course.html');
 });
 
 app.listen(port, () => {
