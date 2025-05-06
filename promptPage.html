@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="promptPage.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Leveragai Academy</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://www.leveragai.com/view/uploads/668fba368b0c0172069535028.png" alt="leveragai-logo">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul class="main-menu">
+                    <li><a href="/">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">PROGRAMS</a>
+                        <div class="sub-menu">
+                            <a href="/experience-with-data-science-projects">Experience Building Program</a>
+                            <a href="/ai-for-business-development">Business Improvement Program</a>
+                            <a href="/data-science-bootcamp">Data Science Bootcamp</a>
+                        </div>
+                    </li>
+                    <li><a href="/solutions">SOLUTIONS</a></li>
+                    <li><a href="/about-us">ABOUT US</a></li>
+                    <li><a href="/events">EVENTS</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="content-wrapper">
+        <h1 class="main-gradient-title"><span>What Do You Need?</span></h1>
+        <div class="prompt-input-wrapper">
+            <input 
+                type="text" 
+                class="prompt-input"
+                placeholder="Write a prompt (I need a course in healthcare...)"
+            >
+        </div>
+        <div class="main-flex-container">
+            <section class="personalize-section">
+                <h2 class="personalize-title"><span>Personalize</span></h2>
+                <div class="control-row">
+                    <span class="control-label">Difficulty</span>
+                    <div class="slider-container">
+                        <div class="slider-labels-top">
+                            <span>Easy</span>
+                            <span>Moderate</span>
+                            <span>Hard</span>
+                        </div>
+                        <input type="range" min="1" max="3" value="1" class="difficulty-slider" id="difficultySlider">
+                    </div>
+                </div>
+                <div class="control-row">
+                    <span class="control-label">Duration</span>
+                    <div class="slider-container">
+                        <div class="slider-labels-top">
+                            <span>1 week</span>
+                            <span>3 weeks</span>
+                            <span>6 weeks</span>
+                        </div>
+                        <input type="range" min="1" max="3" value="1" class="duration-slider" id="durationSlider">
+                    </div>
+                </div>
+                <div class="control-row">
+                    <span class="control-label">Code</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="codeToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="control-row">
+                    <span class="control-label">Assignments</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="assignmentsToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="control-row">
+                    <span class="control-label">Projects</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="projectsToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="toc-generate-btn-wrapper">
+                    <button class="toc-generate-btn card-style-btn" id="generateBtn">Create Table of Contents</button>
+                </div>
+                <!-- New: Predefined Curriculum Section -->
+                <div class="curriculum-section">
+                    <h3 class="curriculum-title">Select Predefined Curriculum</h3>
+                    <div class="curriculum-list">
+                        <button class="curriculum-card">
+                            <span class="curriculum-name">The AI Engineer Course 2025: Complete AI Engineer Bootcamp</span>
+                            <span class="curriculum-duration">18hrs</span>
+                        </button>
+                        <button class="curriculum-card">
+                            <span class="curriculum-name">Machine Learning A–Z: AI, Python & R + ChatGPT</span>
+                            <span class="curriculum-duration">76hrs</span>
+                        </button>
+                        <button class="curriculum-card">
+                            <span class="curriculum-name">All of AI: ChatGPT, Midjourney, Stable Diffusion & App Dev</span>
+                            <span class="curriculum-duration">31hrs</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="toc-section">
+                <h2 class="toc-title">Edit <span>Table Of Contents</span></h2>
+                <div id="toc-list">
+                    <!-- Table of contents rows will be rendered here by JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Corporate</h4>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="/business-improvement">Business Improvement Program</a></li>
+                    <li><a href="/experience-building">Experience Building Program</a></li>
+                    <li><a href="/academy">Leveragai Academy</a></li>
+                    <li><a href="/solutions">Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Recent posts</h4>
+                <ul class="recent-posts">
+                    <li>
+                        <a href="/blog/generative-ai-education">
+                            <span class="post-title">Generative AI in Data Science Education</span>
+                            <span class="post-date">16 January, 2025</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog/revolutionizing-education">
+                            <span class="post-title">Revolutionizing Education: The Role of Generative AI</span>
+                            <span class="post-date">14 January, 2025</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog/integrating-ai-tools">
+                            <span class="post-title">Integrating Generative AI Tools into Classroom</span>
+                            <span class="post-date">06 January, 2025</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p class="newsletter-text">Receive the latest weekly AI news</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h4>Contact Us</h4>
+                    <p class="contact-text">We're ready to talk about your opportunities</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> +1 661 271 00 90</p>
+                        <p><i class="fas fa-envelope"></i> contact@leveragai.com</p>
+                    </div>
+                    <a href="/appointment" class="appointment-btn">Make an appointment</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="company-info">
+                    <h4>About Company</h4>
+                    <p class="company-description">
+                        Leveragai specializes in delivering cutting-edge SaaS products and offers training and consulting. Our cloud-based solutions enhance business efficiency, scalability, and productivity with seamless integration and intuitive interfaces. Leveraging AI and data analytics, we empower businesses to streamline operations and drive growth. Our academy provides comprehensive courses, while our consultancy delivers tailored strategies to optimize processes and ensure sustainable success.
+                    </p>
+                </div>
+                
+                <div class="footer-bottom-right">
+                    <p class="copyright">Copyright © 2025 Leveragai. All rights reserved.</p>
+                    <ul class="footer-links">
+                        <li><a href="/terms">Terms & conditions</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/privacy">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Difficulty slider color (optional, can be removed if not needed)
+        const difficultySlider = document.getElementById('difficultySlider');
+        if (difficultySlider) {
+            difficultySlider.addEventListener('input', (e) => {
+                const value = e.target.value;
+                const colors = ['#00c851', '#ffbb33', '#ff4444'];
+                const percentage = (value - 1) * 50 + '%';
+                difficultySlider.style.background = 
+                    `linear-gradient(90deg, 
+                    #00c851 0%, 
+                    #00c851 ${percentage}, 
+                    #ffbb33 ${percentage}, 
+                    #ffbb33 66%, 
+                    #ff4444 66%, 
+                    #ff4444 100%)`;
+            });
+        }
+
+        // Table of Contents Interactivity
+        let tocRows = [
+            { text: 'Section 1', editing: false },
+            { text: 'Section 2', editing: false },
+            { text: 'Section 3', editing: false },
+            { text: 'Section 4', editing: false },
+            { text: 'Section 5', editing: false },
+            { text: 'Section 6', editing: false },
+        ];
+        function renderToc() {
+            const tocList = document.getElementById('toc-list');
+            tocList.innerHTML = '';
+            tocRows.forEach((row, idx) => {
+                const rowDiv = document.createElement('div');
+                rowDiv.className = 'toc-row';
+                if (row.editing) {
+                    rowDiv.innerHTML = `
+                        <input class="toc-edit-input" type="text" value="${row.text}" />
+                        <span class="toc-action save" title="Save"><i class="fas fa-check"></i></span>
+                        <span class="toc-action cancel" title="Cancel"><i class="fas fa-times"></i></span>
+                    `;
+                } else {
+                    rowDiv.innerHTML = `
+                        <span class="toc-row-text">${row.text}</span>
+                        <span class="toc-action edit" title="Edit"><i class="fas fa-pen"></i></span>
+                        <span class="toc-action delete" title="Delete"><i class="fas fa-times"></i></span>
+                        <span class="toc-action up" title="Move Up"><i class="fas fa-arrow-up"></i></span>
+                        <span class="toc-action down" title="Move Down"><i class="fas fa-arrow-down"></i></span>
+                    `;
+                }
+                // Action handlers
+                rowDiv.querySelectorAll('.toc-action.edit').forEach(el => el.onclick = () => { tocRows[idx].editing = true; renderToc(); });
+                rowDiv.querySelectorAll('.toc-action.save').forEach(el => el.onclick = () => {
+                    const val = rowDiv.querySelector('.toc-edit-input').value.trim();
+                    if (val) tocRows[idx].text = val;
+                    tocRows[idx].editing = false;
+                    renderToc();
+                });
+                rowDiv.querySelectorAll('.toc-action.cancel').forEach(el => el.onclick = () => { tocRows[idx].editing = false; renderToc(); });
+                rowDiv.querySelectorAll('.toc-action.delete').forEach(el => el.onclick = () => { tocRows.splice(idx, 1); renderToc(); });
+                rowDiv.querySelectorAll('.toc-action.up').forEach(el => el.onclick = () => {
+                    if (idx > 0) {
+                        [tocRows[idx-1], tocRows[idx]] = [tocRows[idx], tocRows[idx-1]];
+                        renderToc();
+                    }
+                });
+                rowDiv.querySelectorAll('.toc-action.down').forEach(el => el.onclick = () => {
+                    if (idx < tocRows.length-1) {
+                        [tocRows[idx+1], tocRows[idx]] = [tocRows[idx], tocRows[idx+1]];
+                        renderToc();
+                    }
+                });
+                tocList.appendChild(rowDiv);
+            });
+        }
+        document.getElementById('generateBtn').onclick = () => {
+            alert('Generate clicked! (Implement your logic here)');
+        };
+        renderToc();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>

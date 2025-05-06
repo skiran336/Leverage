@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Leveragai Academy</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://www.leveragai.com/view/uploads/668fba368b0c0172069535028.png" alt="leveragai-logo">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul class="main-menu">
+                    <li><a href="/">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">PROGRAMS</a>
+                        <div class="sub-menu">
+                            <a href="/experience-with-data-science-projects">Experience Building Program</a>
+                            <a href="/ai-for-business-development">Business Improvement Program</a>
+                            <a href="/data-science-bootcamp">Data Science Bootcamp</a>
+                        </div>
+                    </li>
+                    <li><a href="/solutions">SOLUTIONS</a></li>
+                    <li><a href="/about-us">ABOUT US</a></li>
+                    <li><a href="/events">EVENTS</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="content-wrapper">
+        <div class="course-section">
+            <h1 class="course-title">Select <span>Course</span></h1>
+            <div class="course-grid">
+                <div class="course-card" onclick="redirectToTrainer('AI')">
+                    <div class="course-name">Artificial Intelligence</div>
+                </div>
+                <div class="course-card" onclick="redirectToTrainer('CY')">
+                    <div class="course-name">Cybersecurity</div>
+                </div>
+                <div class="course-card" onclick="redirectToTrainer('LS')">
+                    <div class="course-name">Leadership</div>
+                </div>
+                <div class="course-card" onclick="redirectToTrainer('PM')">
+                    <div class="course-name">Project Management</div>
+                </div>
+                <div class="course-card" onclick="redirectToTrainer('DG')">
+                    <div class="course-name">Data Governance</div>
+                </div>
+                <div class="course-card" onclick="redirectToTrainer('DT')">
+                    <div class="course-name">Digital Transformation</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Corporate</h4>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="/business-improvement">Business Improvement Program</a></li>
+                    <li><a href="/experience-building">Experience Building Program</a></li>
+                    <li><a href="/academy">Leveragai Academy</a></li>
+                    <li><a href="/solutions">Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Recent posts</h4>
+                <ul class="recent-posts">
+                    <li>
+                        <a href="/blog/generative-ai-education">
+                            <span class="post-title">Generative AI in Data Science Education</span>
+                            <span class="post-date">16 January, 2025</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog/revolutionizing-education">
+                            <span class="post-title">Revolutionizing Education: The Role of Generative AI</span>
+                            <span class="post-date">14 January, 2025</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog/integrating-ai-tools">
+                            <span class="post-title">Integrating Generative AI Tools into Classroom</span>
+                            <span class="post-date">06 January, 2025</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p class="newsletter-text">Receive the latest weekly AI news</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h4>Contact Us</h4>
+                    <p class="contact-text">We're ready to talk about your opportunities</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> +1 661 271 00 90</p>
+                        <p><i class="fas fa-envelope"></i> contact@leveragai.com</p>
+                    </div>
+                    <a href="/appointment" class="appointment-btn">Make an appointment</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="company-info">
+                    <h4>About Company</h4>
+                    <p class="company-description">
+                        Leveragai specializes in delivering cutting-edge SaaS products and offers training and consulting. Our cloud-based solutions enhance business efficiency, scalability, and productivity with seamless integration and intuitive interfaces. Leveraging AI and data analytics, we empower businesses to streamline operations and drive growth. Our academy provides comprehensive courses, while our consultancy delivers tailored strategies to optimize processes and ensure sustainable success.
+                    </p>
+                </div>
+                
+                <div class="footer-bottom-right">
+                    <p class="copyright">Copyright © 2025 Leveragai. All rights reserved.</p>
+                    <ul class="footer-links">
+                        <li><a href="/terms">Terms & conditions</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/privacy">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function redirectToTrainer(course) {
+            localStorage.setItem('selectedCourse', course);
+            window.location.href = "model.html";
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
